@@ -10,7 +10,7 @@ def question_one():
     print('You answered: ' + (response))
 
     if response.upper() == 'D':
-        print("correct")
+        print("correct! :)")
         scoring += 1
 
     elif response.upper() != 'D':
@@ -31,7 +31,7 @@ def question_two():
     print('You answered: ' + str(response))
 
     if response.upper() == 'C':
-        print("correct")
+        print("correct! :)")
         scoring = 1
     elif response.upper() != 'C':
         print("Incorrect, the correct answer is Asia")
@@ -51,7 +51,7 @@ def question_three():
     print('You answered: ' + str(response))
 
     if response.upper() == 'E':
-        print("correct")
+        print("correct! :)")
         scoring = 1
     elif response.upper() != 'E':
         print("Incorrect, the correct answer is brown")
@@ -70,7 +70,7 @@ def question_four():
     print('You answered: ' + str(response))
 
     if response.upper() == 'A':
-        print("correct")
+        print("correct! :)")
         scoring = 1
     elif response.upper() != 'A':
         print("Incorrect, the correct answer is New York City")
@@ -89,10 +89,28 @@ def question_five():
     print('You answered: ' + str(response))
 
     if response.upper() == 'C':
-        print("correct")
+        print("correct! :)")
         scoring = 1
     elif response.upper() != 'C':
         print("Incorrect, the correct answer is New York City")
         scoring = 0
     print("scoring: " + str(scoring))
     return scoring
+
+def question_six():
+    question_six_text = "6. The B-2 is flown for over 24 hours when in use"
+
+    print(question_six_text)
+    response = input("True or False? [T or F]:")
+    print('You answered: ' + str(response))
+
+    if response.upper() == 'T':
+        print("correct! :)")
+        scoring = 1
+    elif response.upper() != 'T':
+        print("Incorrect, the correct answer is True")
+        scoring = 0
+
+    print("scoring: " + str(scoring))
+    return scoring
+question_six()
