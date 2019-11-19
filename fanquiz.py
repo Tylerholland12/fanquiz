@@ -9,10 +9,10 @@ question_eight = "8. There are 6 generations of jets"
 
 def first_question():
     scoring = 0
-    question1_answers = ['(a) California', '(b) Washington', '(c) Utah', '(d) Colorado', '(e) Alaska']
+    question_response = ['(a) California', '(b) Washington', '(c) Utah', '(d) Colorado', '(e) Alaska']
 
     print(question_one)
-    for answer in question1_answers:
+    for answer in question_response:
         print(answer)
     response = input("Enter one letter for your answer [A, B, C, D or E]:")
     print('You answered: ' + (response))
@@ -28,10 +28,10 @@ def first_question():
     return scoring
 
 def second_question():
-    question_two_answers = ['(a) North America', '(b) South America', '(c) Asia', '(d) Africa', '(e) Antarctica']
+    question_response = ['(a) North America', '(b) South America', '(c) Asia', '(d) Africa', '(e) Antarctica']
 
     print(question_two)
-    for answer in question_two_answers:
+    for answer in question_response:
         print(answer)
     response = input("Enter one letter for your answer [A, B, C, D or E]:")
     print('You answered: ' + str(response))
@@ -46,10 +46,10 @@ def second_question():
     return scoring
 
 def third_question():
-    question_three_answers = ['(a) green', '(b) black', '(c) blue', '(d) clear', '(e) brown']
+    question_response = ['(a) green', '(b) black', '(c) blue', '(d) clear', '(e) brown']
 
     print(question_three)
-    for answer in question_three_answers:
+    for answer in question_response:
         print(answer)
     response = input("Enter one letter for your answer [A, B, C, D or E]:")
     print('You answered: ' + str(response))
@@ -64,10 +64,10 @@ def third_question():
     return scoring
 
 def fourth_question():
-    question_four_answers = ['(a) New York City', '(b) Miami', '(c) Los Angeles', '(d) Seattle', '(e) Boston']
+    question_response = ['(a) New York City', '(b) Miami', '(c) Los Angeles', '(d) Seattle', '(e) Boston']
 
     print(question_four)
-    for answer in question_four_answers:
+    for answer in question_response:
         print(answer)
     response = input("Enter one letter for your answer [A, B, C, D or E]:")
     print('You answered: ' + str(response))
@@ -82,10 +82,10 @@ def fourth_question():
     return scoring
 
 def fifth_question():
-    question_five_answers = ['(a) Berlin, Germany', '(b) Moscow, Russia', '(c) Colorado, United States', '(d) London, England', '(e) Syndey, Australia']
+    question_response = ['(a) Berlin, Germany', '(b) Moscow, Russia', '(c) Colorado, United States', '(d) London, England', '(e) Syndey, Australia']
 
     print(question_five)
-    for answer in question_five_answers:
+    for answer in question_response:
         print(answer)
     response = input("Enter one letter for your answer [A, B, C, D or E]:")
     print('You answered: ' + str(response))
