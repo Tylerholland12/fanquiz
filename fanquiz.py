@@ -1,9 +1,17 @@
-def question_one():
+question_one = "1. What state has the most 14ers?"
+question_two = "2. What continent are tigers most often found?"
+question_three = "3. What is the color of an NBA basketball?"
+question_four = "4. What city is the largest in the United States?"
+question_five = "5. Where can the most accurate clock be found?"
+question_six = "6. The B-2 is flown for over 24 hours when in use"
+question_seven = "7. The fastest plane is the Blackbird"
+question_eight = "8. There are 6 generations of jets"
+
+def first_question():
     scoring = 0
-    question1_text = "1. What state has the most 14ers?"
     question1_answers = ['(a) California', '(b) Washington', '(c) Utah', '(d) Colorado', '(e) Alaska']
 
-    print(question1_text)
+    print(question_one)
     for answer in question1_answers:
         print(answer)
     response = input("Enter one letter for your answer [A, B, C, D or E]:")
@@ -19,11 +27,10 @@ def question_one():
     print("scoring: " + str(scoring))
     return scoring
 
-def question_two():
-    question_two_text = "2. What continent are tigers most often found?"
+def second_question():
     question_two_answers = ['(a) North America', '(b) South America', '(c) Asia', '(d) Africa', '(e) Antarctica']
 
-    print(question_two_text)
+    print(question_two)
     for answer in question_two_answers:
         print(answer)
     response = input("Enter one letter for your answer [A, B, C, D or E]:")
@@ -38,11 +45,10 @@ def question_two():
     print("scoring: " + str(scoring))
     return scoring
 
-def question_three():
-    question_three_text = "3. What is the color of an NBA basketball?"
+def third_question():
     question_three_answers = ['(a) green', '(b) black', '(c) blue', '(d) clear', '(e) brown']
 
-    print(question_three_text)
+    print(question_three)
     for answer in question_three_answers:
         print(answer)
     response = input("Enter one letter for your answer [A, B, C, D or E]:")
@@ -57,11 +63,10 @@ def question_three():
     print("scoring: " + str(scoring))
     return scoring
 
-def question_four():
-    question_four_text = "4. What city is the largest in the United States?"
+def fourth_question():
     question_four_answers = ['(a) New York City', '(b) Miami', '(c) Los Angeles', '(d) Seattle', '(e) Boston']
 
-    print(question_four_text)
+    print(question_four)
     for answer in question_four_answers:
         print(answer)
     response = input("Enter one letter for your answer [A, B, C, D or E]:")
@@ -76,11 +81,10 @@ def question_four():
     print("scoring: " + str(scoring))
     return scoring
 
-def question_five():
-    question_five_text = "5. Where can the most accurate clock be found?"
+def fifth_question():
     question_five_answers = ['(a) Berlin, Germany', '(b) Moscow, Russia', '(c) Colorado, United States', '(d) London, England', '(e) Syndey, Australia']
 
-    print(question_five_text)
+    print(question_five)
     for answer in question_five_answers:
         print(answer)
     response = input("Enter one letter for your answer [A, B, C, D or E]:")
@@ -95,10 +99,8 @@ def question_five():
     print("scoring: " + str(scoring))
     return scoring
 
-def question_six():
-    question_six_text = "6. The B-2 is flown for over 24 hours when in use"
-
-    print(question_six_text)
+def sixth_question():
+    print(question_six)
     response = input("True or False? [T or F]:")
     print('You answered: ' + str(response))
 
@@ -112,10 +114,8 @@ def question_six():
     print("scoring: " + str(scoring))
     return scoring
 
-def question_seven():
-    question_seven_text = "7. The fastest plane is the Blackbird"
-
-    print(question_seven_text)
+def seventh_question():
+    print(question_seven)
     response = input("True or False? [T or F]:")
     print('You answered: ' + str(response))
 
@@ -129,10 +129,8 @@ def question_seven():
     print("scoring: " + str(scoring))
     return scoring
 
-def question_eight():
-    question_eight_text = "8. There are 6 generations of jets"
-
-    print(question_eight_text)
+def eighth_question():
+    print(question_eight)
     response = input("True or False? [T or F]:")
     print('You answered: ' + str(response))
 
@@ -149,42 +147,42 @@ def question_eight():
 def scoring_calculation():
     scoring = 0
     scoring_list = []
-    if question_one() == 1:
+    if first_question() == 1:
         scoring += 1
         scoring_list.append("Question 1: 1")
     else:
         scoring_list.append("Question 1: 0")
-    if question_two() == 1:
+    if second_question() == 1:
         scoring += 1
         scoring_list.append("Question 2: 1")
     else:
         scoring_list.append("Question 2: 0")
-    if question_three() == 1:
+    if third_question() == 1:
         scoring += 1
         scoring_list.append("Question 3: 1")
     else:
         scoring_list.append("Question 3: 0")
-    if question_four() == 1:
+    if fourth_question() == 1:
         scoring += 1
         scoring_list.append("Question 4: 1")
     else:
         scoring_list.append("Question 4: 0")
-    if question_five() == 1:
+    if fifth_question() == 1:
         scoring += 1
         scoring_list.append("Question 5: 1")
     else:
         scoring_list.append("Question 5: 0")
-    if question_six() == 1:
+    if sixth_question() == 1:
         scoring += 1
         scoring_list.append("Question 6: 1")
     else:
         scoring_list.append("Question 6: 0")
-    if question_seven() == 1:
+    if seventh_question() == 1:
         scoring += 1
         scoring_list.append("Question 7: 1")
     else:
         scoring_list.append("Question 7: 0")
-    if question_eight() == 1:
+    if eighth_question() == 1:
         scoring += 1
         scoring_list.append("Question 8: 1")
     else:
