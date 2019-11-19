@@ -58,4 +58,41 @@ def question_three():
         scoring = 0
     print("scoring: " + str(scoring))
     return scoring
-question_three()
+
+def question_four():
+    question_four_text = "4. What city is the largest in the United States?"
+    question_four_answers = ['(a) New York City', '(b) Miami', '(c) Los Angeles', '(d) Seattle', '(e) Boston']
+
+    print(question_four_text)
+    for answer in question_four_answers:
+        print(answer)
+    response = input("Enter one letter for your answer [A, B, C, D or E]:")
+    print('You answered: ' + str(response))
+
+    if response.upper() == 'A':
+        print("correct")
+        scoring = 1
+    elif response.upper() != 'A':
+        print("Incorrect, the correct answer is New York City")
+        scoring = 0
+    print("scoring: " + str(scoring))
+    return scoring
+
+def question_five():
+    question_five_text = "5. Where can the most accurate clock be found?"
+    question_five_answers = ['(a) Berlin, Germany', '(b) Moscow, Russia', '(c) Colorado, United States', '(d) London, England', '(e) Syndey, Australia']
+
+    print(question_five_text)
+    for answer in question_five_answers:
+        print(answer)
+    response = input("Enter one letter for your answer [A, B, C, D or E]:")
+    print('You answered: ' + str(response))
+
+    if response.upper() == 'C':
+        print("correct")
+        scoring = 1
+    elif response.upper() != 'C':
+        print("Incorrect, the correct answer is New York City")
+        scoring = 0
+    print("scoring: " + str(scoring))
+    return scoring
