@@ -147,4 +147,75 @@ def question_eight():
 
     print("scoring: " + str(scoring))
     return scoring
-question_eight()
+
+def scoring_calculation():
+    scoring = 0
+    scoring_list = []
+    if question_one() == 1:
+        scoring += 1
+        scoring_list.append("Question 1: 1")
+    else:
+        scoring_list.append("Question 1: 0")
+    if question_two() == 1:
+        scoring += 1
+        scoring_list.append("Question 2: 1")
+    else:
+        scoring_list.append("Question 2: 0")
+    if question_three() == 1:
+        scoring += 1
+        scoring_list.append("Question 3: 1")
+    else:
+        scoring_list.append("Question 3: 0")
+    if question_four() == 1:
+        scoring += 1
+        scoring_list.append("Question 4: 1")
+    else:
+        scoring_list.append("Question 4: 0")
+    if question_five() == 1:
+        scoring += 1
+        scoring_list.append("Question 5: 1")
+    else:
+        scoring_list.append("Question 5: 0")
+    if question_six() == 1:
+        scoring += 1
+        scoring_list.append("Question 6: 1")
+    else:
+        scoring_list.append("Question 6: 0")
+    if question_seven() == 1:
+        scoring += 1
+        scoring_list.append("Question 7: 1")
+    else:
+        scoring_list.append("Question 7: 0")
+    if question_eight() == 1:
+        scoring += 1
+        scoring_list.append("Question 8: 1")
+    else:
+        scoring_list.append("Question 8: 0")
+    
+    for score in scoring_list:
+        print(score)
+    print("")
+    print("Calculated scoring is: " + str(scoring))
+    return scoring
+
+def fan_quiz_scoring():
+    scoring = scoring_calculation()
+    print("You shall be named:")
+    if scoring == 8:
+        phrase = "Master is an undestatement"
+    elif scoring == 6:
+        phrase = "Eh you almost mastered it"
+    elif scoring == 4:
+        phrase = "woah, you're pretty good"
+    elif scoring == 2:
+        phrase = "ou nice try"
+    else:
+        phrase = "nameless"
+    print(phrase)
+
+def run_quiz():
+    print('\n\n\nRandom knowledge quiz\n\n\n')
+
+    fan_quiz_scoring()
+
+run_quiz()
