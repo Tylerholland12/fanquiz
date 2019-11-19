@@ -21,10 +21,10 @@ def question_one():
 
 def question_two():
 
-    question2_text = "2. What continent are tigers most often found?"
+    question_two_text = "2. What continent are tigers most often found?"
     question_two_answers = ['(a) North America', '(b) South America', '(c) Asia', '(d) Africa', '(e) Antarctica']
 
-    print(question2_text)
+    print(question_two_text)
     for answer in question_two_answers:
         print(answer)
     response = input("Enter one letter for your answer [A, B, C, D or E]:")
@@ -38,4 +38,24 @@ def question_two():
         scoring = 0
     print("scoring: " + str(scoring))
     return scoring
-question_two()
+
+def question_three():
+
+    question_three_text = "3. What is the color of an NBA basketball?"
+    question_three_answers = ['(a) green', '(b) black', '(c) blue', '(d) clear', '(e) brown']
+
+    print(question_three_text)
+    for answer in question_three_answers:
+        print(answer)
+    response = input("Enter one letter for your answer [A, B, C, D or E]:")
+    print('You answered: ' + str(response))
+
+    if response.upper() == 'E':
+        print("correct")
+        scoring = 1
+    elif response.upper() != 'E':
+        print("Incorrect, the correct answer is brown")
+        scoring = 0
+    print("scoring: " + str(scoring))
+    return scoring
+question_three()
