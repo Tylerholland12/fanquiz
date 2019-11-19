@@ -19,4 +19,23 @@ def question_one():
     print("scoring: " + str(scoring))
     return scoring
 
-question_one()
+def question_two():
+
+    question2_text = "2. What continent are tigers most often found?"
+    question_two_answers = ['(a) North America', '(b) South America', '(c) Asia', '(d) Africa', '(e) Antarctica']
+
+    print(question2_text)
+    for answer in question_two_answers:
+        print(answer)
+    response = input("Enter one letter for your answer [A, B, C, D or E]:")
+    print('You answered: ' + str(response))
+
+    if response.upper() == 'C':
+        print("correct")
+        scoring = 1
+    elif response.upper() != 'C':
+        print("Incorrect, the correct answer is Asia")
+        scoring = 0
+    print("scoring: " + str(scoring))
+    return scoring
+question_two()
