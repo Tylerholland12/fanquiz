@@ -113,4 +113,38 @@ def question_six():
 
     print("scoring: " + str(scoring))
     return scoring
-question_six()
+
+def question_seven():
+    question_seven_text = "7. The fastest plane is the Blackbird"
+
+    print(question_seven_text)
+    response = input("True or False? [T or F]:")
+    print('You answered: ' + str(response))
+
+    if response.upper() == 'T':
+        print("correct! :)")
+        scoring = 1
+    elif response.upper() != 'T':
+        print("Incorrect, the correct answer is True")
+        scoring = 0
+
+    print("scoring: " + str(scoring))
+    return scoring
+
+def question_eight():
+    question_eight_text = "8. There are 6 generations of jets"
+
+    print(question_eight_text)
+    response = input("True or False? [T or F]:")
+    print('You answered: ' + str(response))
+
+    if response.upper() == 'F':
+        print("correct! :)")
+        scoring = 1
+    elif response.upper() != 'F':
+        print("Incorrect, the correct answer is False")
+        scoring = 0
+
+    print("scoring: " + str(scoring))
+    return scoring
+question_eight()
