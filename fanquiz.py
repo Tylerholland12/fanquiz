@@ -20,7 +20,6 @@ def question_one():
     return scoring
 
 def question_two():
-
     question_two_text = "2. What continent are tigers most often found?"
     question_two_answers = ['(a) North America', '(b) South America', '(c) Asia', '(d) Africa', '(e) Antarctica']
 
@@ -40,7 +39,6 @@ def question_two():
     return scoring
 
 def question_three():
-
     question_three_text = "3. What is the color of an NBA basketball?"
     question_three_answers = ['(a) green', '(b) black', '(c) blue', '(d) clear', '(e) brown']
 
